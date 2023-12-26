@@ -12,12 +12,12 @@ nav a{
     text-decoration: none;
     color: inherit;
 }
-nav p{
+nav p, nav a{
     padding-right: 2vw;
     width: 10vw;
 }
 nav img{
-    padding-right: 30vw;
+    padding-right: 25vw;
     width: 10vw;
     height: 10vw;
     padding-left: 1vw;
@@ -61,6 +61,9 @@ nav img{
 .inner-intro p{
     font-size: 1.5vw;
     text-justify: newspaper;
+}
+.inner-intro img{
+    width: 40vw;
 }
 .expertie{
     padding: 5vw;
@@ -106,7 +109,6 @@ nav img{
 }
 .inner-footer img{
     width: 14vw;
-    padding-right: 10vw;
 }
 iframe{
     height: 15vw;
@@ -120,4 +122,43 @@ iframe{
 .inner-footer div{
     display: flex;
     align-items: center;
+}
+.inner-footer p, .inner-footer a, .inner-footer span{
+    font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+    .card-expertie{
+        padding: 2vw;
+        margin: 1vw;
+        width: 70vw ;
+        background-color: rgb(70, 69, 69);
+        color: white;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .inner-footer img{
+        width: 20vw;
+        padding-right: 10vw;
+    }
+    .inner-footer{
+        padding-bottom: 5vw;
+    }
+    iframe{
+        height: 30vw;
+        width: 85vw;
+        padding-bottom: 2vw;
+    }
+    .inner-footer p, .inner-footer a, .inner-footer span{
+        font-size: 3vw;
+    }
+    nav img{
+        padding-right: 5vw;
+    }
+    nav p, nav a{
+        width: 14vw;
+        font-size: 3vw;
+    }
 }
