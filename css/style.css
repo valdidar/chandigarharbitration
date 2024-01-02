@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(230, 230, 230);
     padding: 0px;
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -45,25 +45,30 @@ nav img{
     font-size: 4vw;
 }
 .intro{
-    background-color: white;
-    padding: 5vw;
+    width: 90%;
+    background-color: rgb(230, 230, 230);
+    padding: 5%;
     padding-bottom: 0vw;
 }
 .inner-intro{
+    width: 90%;
     background-color: black;
-    padding: 5vw;
+    padding: 5%;
     display: flex;
     padding-bottom: 0px;
 }
 .inner-intro h2{
     font-size: 2.5vw;
+    width: 70%;
 }
 .inner-intro p{
     font-size: 1.5vw;
     text-justify: newspaper;
+    width: 70%;
 }
 .inner-intro img{
-    width: 40vw;
+    width: 30%;
+    padding-bottom: 5vw;
 }
 .expertie{
     padding: 5vw;
@@ -73,7 +78,7 @@ nav img{
 .inner-expertie{
     padding: 5vw;
     padding-top: 1vw;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     color: black;
 }
 .inner-expertie h2{
@@ -87,8 +92,9 @@ nav img{
     padding: 2vw;
     margin: 1vw;
     width: 32vw ;
-    background-color: rgb(70, 69, 69);
-    color: white;
+    /* background-color: rgb(70, 69, 69); */
+    background-image: url(../images/background_media.jpg);
+    color: rgb(230, 230, 230);
 }
 .card-expertie svg{
     filter: invert(100%);
@@ -110,6 +116,9 @@ nav img{
 .inner-footer img{
     width: 14vw;
 }
+.port{
+    display: none;
+}
 iframe{
     height: 15vw;
     width: 30vw;
@@ -126,14 +135,111 @@ iframe{
 .inner-footer p, .inner-footer a, .inner-footer span{
     font-size: 1.5vw;
 }
+/* ----------- popup ---------- */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #0b0028;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.popup-content{
+    text-align: left;
+}
+
+button {
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/* --------main div of about --------- */
+.main{
+    padding: 10px;
+    display: flex;
+}
+.main p{
+    font-size: 1vw;
+}
+.profile-main{
+    width: 30vw;
+    padding: 5%;
+    padding-top: 0%;
+}
+.profile-main img{
+    width: 100%;
+}
+.text-main{
+    width: 70vw;
+    background-color:rgb(40, 40, 40);
+    padding: 10px;
+    /* border: rgb(142, 142, 142) solid; */
+    border: 5px solid transparent;
+    border-image: url(../images/background_media.jpg) 20 round;
+}
+/* ------ adding testimony --------- */
+.testimony-outer{
+    
+    padding: 2vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.testimony{
+    background-image: url(../images/background_media.jpg);
+    /* background-color: rgb(211, 211, 211); */
+    padding: 10px;
+    color: rgb(220, 220, 220);
+    border: rgb(220, 220, 220) solid;
+}
+.left-name{
+    text-align: right;
+}
+/* ----- reasons ----- */
+.reasons{
+    background-color: #000000;
+    display: flex;
+}
+.reason{
+    width: 33%;
+}
+.reasons img{
+    width: 30%;
+    padding-left: 3%;
+}
 
 @media (max-width: 600px) {
     .card-expertie{
         padding: 2vw;
         margin: 1vw;
         width: 70vw ;
-        background-color: rgb(70, 69, 69);
-        color: white;
+        background-color: #57606a;
+        color: rgb(230, 230, 230);
+    }
+    .inner-intro h2{
+        font-size: 4vw;
+        width: 100%;
+    }
+    .inner-intro p{
+        font-size: 3vw;
+        text-justify: newspaper;
+        width: 100%;
+    }
+    .inner-intro img{
+        width: 20%;
+        padding-bottom: 5vw;
+    }
+    .port-intro{
+        display: flex;
     }
     .footer{
         display: flex;
@@ -145,6 +251,12 @@ iframe{
     }
     .inner-footer{
         padding-bottom: 5vw;
+    }
+    .port{
+        display: block;
+    }
+    .land{
+        display: none;
     }
     iframe{
         height: 30vw;
@@ -160,5 +272,39 @@ iframe{
     nav p, nav a{
         width: 14vw;
         font-size: 3vw;
+    }
+    .main p{
+        font-size: 2vw;
+    }
+    .main{
+        display: block;
+    }
+    .profile-main{
+        width: 80vw;
+        padding: 2vw;
+        margin: 3vw;
+        display: flex;
+    }
+    .profile-main img{
+        width: 40%;
+        padding-right: 5%;
+    }
+    .profile-main h2{
+        font-size: 4vw;
+    }
+    .text-main{
+        width: 80vw;
+        background-color:rgb(40, 40, 40);
+        padding: 2vw;
+        margin: 3vw;
+        border-radius: 5%;
+        border: rgb(142, 142, 142) solid;
+    }
+    .reasons{
+        display: block;
+    }
+    .reasons img{
+        width: 60%;
+        padding-left: 20%;
     }
 }

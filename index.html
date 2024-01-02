@@ -9,6 +9,23 @@
 </head>
 
 <body>
+    <!-- Popup Container -->
+    <div id="popup-container" class="popup">
+        <div class="popup-content">
+            <h2>Welcome to Your Website</h2>
+            <p>The Bar Council of India's regulations prohibit the advertisement and solicitation of legal services through public communication. This website is designed exclusively for informational purposes and not for promotional activities. We explicitly state that we do not seek clients through this platform, and we disclaim any responsibility for decisions made by readers based solely on the website's information.<br> clicking 'ENTER,' visitors acknowledge the following: <br>
+                <ul>
+                    <li>No form of advertising, personal communication, solicitation, invitation, or inducement has been made by us or any of our members to solicit work through this website.</li>
+                    <li>The visitor seeks information about us for personal use, and any materials downloaded are at the visitor's own discretion.</li>
+                    <li>The information on this website is provided upon specific request, and the use of the site does not establish a lawyer-client relationship.</li>
+                    <li>We are not held liable for any consequences resulting from actions taken by visitors relying on the material/information provided on this website.</li>
+                </ul>
+            </p>
+            <button id="agree-btn">Agree</button>
+            <button id="disagree-btn">Disagree</button>
+        </div>
+    </div>
+
     <div class="nav">
         <nav>
             <!-- <h1>Chandigarh Arbitration Consultants</h1> -->
@@ -37,8 +54,11 @@
     <div class="intro">
         <div class="inner-intro">
             <div>
-                <h2>Hello. We're Chandigarh Arbitration Consultants</h2>
-                <br />
+                <div class="port-intro">
+                    <h2>Hello. We're Chandigarh Arbitration Consultants</h2>
+                    <br>
+                    <img class="port" src="images/photo.png" alt="" />
+                </div>
                 <p>
                     Are you facing challenges in your construction and engineering
                     contracts, encountering issues during the contractual or extended
@@ -49,7 +69,7 @@
                     industry.
                 </p>
             </div>
-            <img src="images/photo.png" alt="" />
+            <img class="land" src="images/photo.png" alt="" />
         </div>
     </div>
     <div class="expertie">
@@ -187,9 +207,14 @@
             </div>
         </div>
         <div class="inner-footer">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214.42402312929198!2d76.71320560793457!3d30.6963425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feff82ed3593b%3A0xd2a021ae84f84680!2sChandigarh%20Arbitration%20Consultants!5e0!3m2!1sen!2sin!4v1703690592091!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214.42402312929198!2d76.71320560793457!3d30.6963425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feff82ed3593b%3A0xd2a021ae84f84680!2sChandigarh%20Arbitration%20Consultants!5e0!3m2!1sen!2sin!4v1703690592091!5m2!1sen!2sin"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+    <script src="script/script.js"></script>
+
 </body>
 
 </html>
