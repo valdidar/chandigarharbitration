@@ -119,6 +119,7 @@ nav img {
 .card-expertie svg {
     filter: invert(100%);
     width: 20vw;
+    z-index: -1;
 }
 
 .card-expertie h4 {
@@ -185,8 +186,11 @@ iframe {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 1.2vw;
+    z-index: 1;
 }
 
 .popup-content {
@@ -284,16 +288,16 @@ button {
     }
 
     .card-expertie p {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .inner-intro h2 {
-        font-size: 4vw;
+        font-size: 5vw;
         width: 100%;
     }
 
     .inner-intro p {
-        font-size: 2vw;
+        font-size: 3svw;
         text-justify: newspaper;
         width: 100%;
     }
@@ -319,6 +323,10 @@ button {
 
     .inner-footer {
         padding-bottom: 5vw;
+    }
+
+    .popup {
+        font-size: 2vw;
     }
 
     .port {
