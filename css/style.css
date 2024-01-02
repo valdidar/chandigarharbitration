@@ -270,7 +270,7 @@ button {
     padding-left: 3%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .card-expertie {
         padding: 2vw;
         margin: 1vw;
