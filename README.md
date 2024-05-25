@@ -1,6 +1,6 @@
 # Chandigarh Arbitration Website
 
-Welcome to the repository for the Chandigarh Arbitration website. This project was developed as a freelance project to provide information about the arbitration services in Chandigarh. Below are the details of the website, including the current progress and important disclaimers.
+Welcome to the repository for the Chandigarh Arbitration website. This project was developed as a freelance project to provide information about chandigarh arbitration consultants. Below are the details of the website, including the current progress and important disclaimers.
 
 ## Current Pages
 
